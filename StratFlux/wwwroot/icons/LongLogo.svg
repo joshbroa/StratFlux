@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="146.04216mm"
+   height="26.51137mm"
+   viewBox="0 0 146.04216 26.51137"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="SFLogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2"
+     inkscape:cx="371.75"
+     inkscape:cy="249.75"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient36">
+      <stop
+         style="stop-color:#fb3640;stop-opacity:1;"
+         offset="0"
+         id="stop33" />
+      <stop
+         style="stop-color:#fb3640;stop-opacity:1;"
+         offset="0.52083331"
+         id="stop34" />
+      <stop
+         style="stop-color:#605f5e;stop-opacity:1;"
+         offset="0.52083331"
+         id="stop35" />
+      <stop
+         style="stop-color:#605f5e;stop-opacity:1;"
+         offset="1"
+         id="stop36" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient36"
+       id="linearGradient33"
+       x1="36.835777"
+       y1="45.434414"
+       x2="182.87831"
+       y2="45.434414"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.835851,-32.178767)">
+    <path
+       id="text26"
+       style="font-size:34.2194px;line-height:0;font-family:Tomorrow;-inkscape-font-specification:'Tomorrow, Normal';fill:url(#linearGradient33);stroke:#000000;stroke-width:1.29117;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 41.040389,32.824353 -3.558956,3.593062 v 6.399093 l 3.558956,3.558956 h 9.752376 l 1.84795,1.882056 v 5.030183 l -1.84795,1.882056 H 38.371301 v 2.87476 H 52.19578 l 3.558956,-3.593062 V 47.230709 L 52.19578,43.637646 h -9.752376 l -1.847949,-1.882055 -0.03411,-4.174422 1.882056,-1.882056 h 12.010637 v -2.87476 z m 75.385061,0 v 2.87476 h 3.11402 13.14029 v -2.87476 z m 19.57348,0 v 25.220166 h 3.01119 V 32.824353 Z m -75.017639,2.737817 -0.02532,4.58525 h -1.950785 v 2.395203 h 1.882056 v 12.387874 l 3.148645,3.114022 h 4.448307 V 55.54648 h -2.977079 l -1.608171,-1.6769 V 42.542623 H 67.69716 V 40.14742 h -3.798218 v -4.58525 z m 44.116679,0.0083 -0.0331,4.576982 h -1.95078 v 2.395203 h 1.88206 v 12.387874 l 3.14812,3.114022 h 4.44883 V 55.54648 h -2.97708 l -1.60869,-1.6769 V 42.542623 h 3.79874 V 40.14742 h -3.79874 V 35.56217 Z M 72.145467,40.14742 V 58.044519 H 75.15717 V 46.512406 l 3.250447,-3.3538 h 4.448824 V 40.14742 H 78.270675 L 75.15717,43.364278 V 40.14742 Z m 13.859102,0 v 2.532145 h 8.486304 l 1.847949,1.882056 v 2.224671 h -9.102286 l -3.558956,3.593062 v 4.072103 l 3.558956,3.593062 h 6.330363 l 2.771923,-2.771924 v 2.771924 h 3.011186 V 43.740483 L 95.791052,40.14742 Z m 58.412451,0 v 14.304037 l 3.55896,3.593062 h 6.50141 l 2.73782,-2.771924 v 2.771924 h 3.01119 V 40.14742 h -3.01119 v 11.977047 l -3.52485,3.524333 h -4.44831 l -1.84795,-1.916162 0.0341,-13.585218 z m 19.06034,0 6.29626,8.691976 -6.33088,9.205123 h 3.6959 l 4.99607,-7.733895 h 0.75293 l 5.06429,7.733895 h 3.66127 l -6.29625,-9.205123 6.29625,-8.691976 h -3.59254 l -5.09892,7.254855 h -0.78703 L 167.0358,40.14742 Z m -47.05191,3.695899 v 14.2012 h 3.11402 V 46.683455 h 11.53212 v -2.840136 h -11.53212 z m -20.086628,5.304069 v 3.011185 L 92.813973,55.6488 h -4.243152 l -1.882056,-1.882056 v -2.737301 l 1.882056,-1.847949 z"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+       inkscape:export-filename="LongLogo.svg"
+       inkscape:export-xdpi="244.87122"
+       inkscape:export-ydpi="244.87122" />
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+﻿@using StratFlux.ViewModels.Backtests
+@model NewBacktestViewModel
+
+@{
+    ViewData["Title"] = "New Backtest";
+}
+
+<form asp-action="RunNewBacktest" asp-controller="Backtests" class="submit-backtest-form">
+    <div class="name-submit-div">
+        <div class="name-form-field">
+            <label asp-for="Input.ResultsName" class="name-label-text"></label>
+            <input asp-for="Input.ResultsName" class="name-form-input-field" />
+            <span asp-validation-for="Input.ResultsName" class="validation-text"></span>
+        </div>
+        <button type="submit" class="submit-form-button">Run Backtest</button>
+    </div>
+    <div class="strategy-settings-div">
+        <div class="strategies-list-container">
+            <label class="list-label">Choose a Strategy</label>
+            <div class="strategies-list">
+                @if (ViewBag.StrategiesOrderedIds != null && ViewBag.StrategiesIdToDisplayNameMappings != null)
+                {
+                    @foreach (string strategyId in ViewBag.StrategiesOrderedIds)
+                    {
+                        <div onclick="selectOption('strategy-@strategyId')" class="strategy-choice-list-item">
+                            <input type="radio" asp-for="StrategyId" value="@strategyId" id="strategy-@strategyId" class="list-item-radio-button" />
+                            <label class="list-item-label">@ViewBag.StrategiesIdToDisplayNameMappings[strategyId]</label>
+                        </div>
+                    }
+                }
+            </div>
+            <span asp-validation-for="StrategyId" class="validation-text"></span>
+        </div>
+        <div class="settings-list-container">
+            <label class="list-label">Choose the Settings for this Backtest</label>
+            <div class="settings-list">
+                @if (ViewBag.SettingsOrderedIds != null && ViewBag.SettingsIdToDisplayNameMappings != null)
+                {
+                    @foreach (string settingsId in ViewBag.SettingsOrderedIds)
+                    {
+                        <div onclick="selectOption('settings-@settingsId')" class="settings-choice-list-item">
+                            <input type="radio" asp-for="BacktestingSettingsId" value="@settingsId" id="settings-@settingsId" class="list-item-radio-button" />
+                            <label class="list-item-label">@ViewBag.SettingsIdToDisplayNameMappings[settingsId]</label>
+                        </div>
+                    }
+                }
+            </div>
+            <span asp-validation-for="BacktestingSettingsId" class="validation-text"></span>
+        </div>
+    </div>
+</form>
+
+<script src="~/js/BacktestJsFiles/NewBacktest.js"></script>
+<link rel="stylesheet" href="~/css/Backtests/NewBacktest.css" />

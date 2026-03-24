@@ -1,0 +1,31 @@
+﻿@model StratFlux.ViewModels.Login.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="form-container">
+    <form class="login-form" method="post" asp-controller="Login" asp-action="SubmitDetails">
+        <div class="login-form-field">
+            <label asp-for="Input.UserNameOrEmail" class="login-label-text"></label>
+            <input asp-for="Input.UserNameOrEmail" class="login-form-input-field" autocomplete="username" />
+            <span asp-validation-for="Input.UserNameOrEmail" class="validation-text"></span>
+        </div>
+
+        <div class="login-form-field">
+            <label asp-for="Input.Password" class="login-label-text"></label>
+            <input asp-for="Input.Password" class="login-form-input-field" autocomplete="current-password" />
+            <span asp-validation-for="Input.Password" class="validation-text"></span>
+        </div>
+
+        <div class="login-form-toggle">
+            <label asp-for="Input.RememberMe" class="login-label-text"></label>
+            <input asp-for="Input.RememberMe" type="checkbox" class="login-form-toggle-button" autocomplete="off" />
+            <span asp-validation-for="Input.RememberMe" class="validation-text"></span>
+        </div>
+
+        <button type="submit" class="login-submit-button">Login</button>
+    </form>
+</div>
+
+<link rel="stylesheet" href="~/css/Login/Login.css" />

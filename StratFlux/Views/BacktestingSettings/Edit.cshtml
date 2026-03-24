@@ -1,0 +1,146 @@
+﻿@using StratFlux.ViewModels.BacktestingSettings
+@using StratFlux.ModelEnums
+@model BacktestingSettingsViewModel
+
+@{
+    ViewData["Title"] = "Backtesting Settings Editing";
+}
+
+<div class="settings-form-container">
+    <form class="settings-form" method="post" asp-controller="BacktestingSettings" asp-action="SaveSettings" asp-route-Id="@Model.Id">
+        <div class="settings-form-field">
+            <label asp-for="Input.BacktestingSettingsName" class="settings-label-text"></label>
+            <input asp-for="Input.BacktestingSettingsName" class="settings-form-input-field" />
+            <span asp-validation-for="Input.BacktestingSettingsName" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.StockToTrade" class="settings-label-text"></label>
+            <input asp-for="Input.StockToTrade" class="settings-form-input-field" />
+            <span asp-validation-for="Input.StockToTrade" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.TimeResolution" class="settings-label-text"></label>
+            <select asp-for="Input.TimeResolution" class="settings-form-list-field">
+                @{
+                    // Gets list of possible values
+                    TimeResolution[] resolutions = Enum.GetValues<TimeResolution>();
+
+                    // Mappings for enum display name and value
+                    Dictionary<TimeResolution, string> resolutionDisplayMappings = new Dictionary<TimeResolution, string>()
+                    {
+                        { TimeResolution.PerMinute, "Every Minute" },
+                        { TimeResolution.Hourly, "Hourly" },
+                        { TimeResolution.Daily, "Daily" },
+                        { TimeResolution.Weekly, "Weekly" },
+                        { TimeResolution.Monthly, "Monthly" }
+                    };
+
+                    // Creates options and selects option if it is saved as the selected
+                    foreach (TimeResolution resolution in resolutions)
+                    {
+                        if (Model.Input == null)
+                        {
+                            // Option field created (nothing selected on load)
+                            <option value="@resolution" class="settings-list-option">@resolutionDisplayMappings[resolution]</option>
+                        }
+                        else if (Model.Input.TimeResolution == resolution)
+                        {
+                            // Option field created (selected)
+                            <option value="@resolution" selected class="settings-list-option">@resolutionDisplayMappings[resolution]</option>
+                        }
+                        else
+                        {
+                            // Option field created (unselected)
+                            <option value="@resolution" class="settings-list-option">@resolutionDisplayMappings[resolution]</option>
+                        }
+                        
+                    }
+                }
+            </select>
+            <span asp-validation-for="Input.TimeResolution" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.TimeFrameStart" class="settings-label-text"></label>
+            <input asp-for="Input.TimeFrameStart" type="datetime-local" class="settings-form-date-time-field" />
+            <span asp-validation-for="Input.TimeFrameStart" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.TimeFrameEnd" class="settings-label-text"></label>
+            <input asp-for="Input.TimeFrameEnd" type="datetime-local" class="settings-form-date-time-field" />
+            <span asp-validation-for="Input.TimeFrameEnd" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.InitialCapital" class="settings-label-text"></label>
+            <input asp-for="Input.InitialCapital" type="number" step="0.01" class="settings-form-input-field" />
+            <span asp-validation-for="Input.InitialCapital" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.OrderSize" class="settings-label-text"></label>
+            <input asp-for="Input.OrderSize" type="number" class="settings-form-input-field" />
+            <span asp-validation-for="Input.OrderSize" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.PyramidingLimit" class="settings-label-text"></label>
+            <input asp-for="Input.PyramidingLimit" type="number" class="settings-form-input-field" />
+            <span asp-validation-for="Input.PyramidingLimit" class="validation-text"></span>
+        </div>
+
+
+        <div class="settings-form-field">
+            <label asp-for="Input.CommissionFeeType" class="settings-label-text"></label>
+            <select asp-for="Input.CommissionFeeType" class="settings-form-list-field">
+                @{
+                    // Gets list of possible values
+                    CommissionFeeType[] feeTypes = Enum.GetValues<CommissionFeeType>();
+
+                    // Display mappings are not needed because the Enum names appear as needed to the user
+
+                    // Creates options and selects option if it is saved as the selected
+                    foreach (CommissionFeeType feeType in feeTypes)
+                    {
+                        if (Model.Input == null)
+                        {
+                            // Option field created (unselected)
+                            <option value="@feeType" class="settings-list-option">@feeType</option>
+                        }
+                        else if (Model.Input.CommissionFeeType == feeType)
+                        {
+                            // Option field created (selected)
+                            <option value="@feeType" selected class="settings-list-option">@feeType</option>
+                        }
+                        else
+                        {
+                            // Option field created (unselected)
+                            <option value="@feeType" class="settings-list-option">@feeType</option>
+                        }
+
+                    }
+                }
+            </select>
+            <span asp-validation-for="Input.CommissionFeeType" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.CommissionFee" class="settings-label-text"></label>
+            <input asp-for="Input.CommissionFee" type="number" step="any" class="settings-form-input-field" />
+            <span asp-validation-for="Input.CommissionFee" class="validation-text"></span>
+        </div>
+
+        <div class="settings-form-field">
+            <label asp-for="Input.ResetPosAtEoD" class="settings-label-text"></label>
+            <input asp-for="Input.ResetPosAtEoD" type="checkbox" class="settings-form-toggle-button" />
+            <span asp-validation-for="Input.ResetPosAtEoD" class="validation-text"></span>
+        </div>
+
+        <button type="submit" class="settings-submit-button">Save</button>
+    </form>
+</div>
+
+<link rel="stylesheet" href="~/css/BacktestingSettings/BacktestingSettingsEditing.css" />

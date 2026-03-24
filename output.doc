@@ -1,0 +1,796 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is A8CA-4B42
+C:.
+|   output.doc
+|   StratFlux.sln
+|   
+\---StratFlux
+    |   appsettings.Development.json
+    |   appsettings.json
+    |   BacktestsHub.cs
+    |   Program.cs
+    |   StratFlux.csproj
+    |   StratFlux.csproj.user
+    |   
+    +---Areas
+    |   \---Identity
+    |       \---Pages
+    |           |   _ValidationScriptsPartial.cshtml
+    |           |   _ViewImports.cshtml
+    |           |   _ViewStart.cshtml
+    |           |   
+    |           \---Account
+    |                   Login.cshtml
+    |                   Login.cshtml.cs
+    |                   Register.cshtml
+    |                   Register.cshtml.cs
+    |                   _ViewImports.cshtml
+    |                   
+    +---Backtesting
+    |   |   BacktestingEngine.cs
+    |   |   InputConnection.cs
+    |   |   NodeInput.cs
+    |   |   NodeName.cs
+    |   |   NodeOutput.cs
+    |   |   NodeType.cs
+    |   |   Order.cs
+    |   |   OutputConnection.cs
+    |   |   StrategyClass.cs
+    |   |   Trade.cs
+    |   |   TradeType.cs
+    |   |   
+    |   \---Nodes
+    |           AddNode.cs
+    |           AndNode.cs
+    |           AreaIndicatorNode.cs
+    |           AreaIndicatorStockNode.cs
+    |           BOLDNode.cs
+    |           BOLUNode.cs
+    |           ChartNode.cs
+    |           CloseNode.cs
+    |           CloseTradesNode.cs
+    |           ConstNode.cs
+    |           CrossoverNode.cs
+    |           CrossunderNode.cs
+    |           DivideNode.cs
+    |           DPosNode.cs
+    |           EMANode.cs
+    |           EqualNode.cs
+    |           GreaterEqualNode.cs
+    |           GreaterNode.cs
+    |           HighNode.cs
+    |           IndicatorNode.cs
+    |           IndicatorStockNode.cs
+    |           IPosNode.cs
+    |           LessEqualNode.cs
+    |           LessNode.cs
+    |           LowNode.cs
+    |           MFINode.cs
+    |           MultiplyNode.cs
+    |           Node.cs
+    |           NotNode.cs
+    |           OpenNode.cs
+    |           OrNode.cs
+    |           RPosNode.cs
+    |           RSINode.cs
+    |           SMANode.cs
+    |           SPosNode.cs
+    |           SubtractNode.cs
+    |           TPSLANode.cs
+    |           TPSLPNode.cs
+    |           VolumeNode.cs
+    |           XorNode.cs
+    |           
+    +---bin
+    |   \---Debug
+    |       \---net6.0
+    |           |   Alpaca.Markets.dll
+    |           |   appsettings.Development.json
+    |           |   appsettings.json
+    |           |   dotnet-aspnet-codegenerator-design.dll
+    |           |   Humanizer.dll
+    |           |   MessagePack.Annotations.dll
+    |           |   MessagePack.dll
+    |           |   Microsoft.AspNetCore.Connections.Abstractions.dll
+    |           |   Microsoft.AspNetCore.Cryptography.Internal.dll
+    |           |   Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+    |           |   Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+    |           |   Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+    |           |   Microsoft.AspNetCore.Identity.UI.dll
+    |           |   Microsoft.AspNetCore.Razor.Language.dll
+    |           |   Microsoft.AspNetCore.SignalR.Common.dll
+    |           |   Microsoft.Bcl.AsyncInterfaces.dll
+    |           |   Microsoft.Build.dll
+    |           |   Microsoft.Build.Framework.dll
+    |           |   Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.Features.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+    |           |   Microsoft.CodeAnalysis.dll
+    |           |   Microsoft.CodeAnalysis.Features.dll
+    |           |   Microsoft.CodeAnalysis.Razor.dll
+    |           |   Microsoft.CodeAnalysis.Scripting.dll
+    |           |   Microsoft.CodeAnalysis.Workspaces.dll
+    |           |   Microsoft.Data.SqlClient.dll
+    |           |   Microsoft.DiaSymReader.dll
+    |           |   Microsoft.DotNet.Scaffolding.Shared.dll
+    |           |   Microsoft.EntityFrameworkCore.Abstractions.dll
+    |           |   Microsoft.EntityFrameworkCore.Design.dll
+    |           |   Microsoft.EntityFrameworkCore.dll
+    |           |   Microsoft.EntityFrameworkCore.Relational.dll
+    |           |   Microsoft.EntityFrameworkCore.SqlServer.dll
+    |           |   Microsoft.Extensions.Caching.Memory.dll
+    |           |   Microsoft.Extensions.DependencyInjection.dll
+    |           |   Microsoft.Extensions.Features.dll
+    |           |   Microsoft.Extensions.FileProviders.Embedded.dll
+    |           |   Microsoft.Extensions.Identity.Core.dll
+    |           |   Microsoft.Extensions.Identity.Stores.dll
+    |           |   Microsoft.Identity.Client.dll
+    |           |   Microsoft.IdentityModel.JsonWebTokens.dll
+    |           |   Microsoft.IdentityModel.Logging.dll
+    |           |   Microsoft.IdentityModel.Protocols.dll
+    |           |   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+    |           |   Microsoft.IdentityModel.Tokens.dll
+    |           |   Microsoft.NET.StringTools.dll
+    |           |   Microsoft.VisualStudio.Debugger.Contracts.dll
+    |           |   Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+    |           |   Microsoft.VisualStudio.Web.CodeGeneration.dll
+    |           |   Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+    |           |   Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+    |           |   Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+    |           |   Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+    |           |   Microsoft.Win32.SystemEvents.dll
+    |           |   Newtonsoft.Json.dll
+    |           |   Npgsql.dll
+    |           |   Npgsql.EntityFrameworkCore.PostgreSQL.dll
+    |           |   NuGet.Common.dll
+    |           |   NuGet.Configuration.dll
+    |           |   NuGet.DependencyResolver.Core.dll
+    |           |   NuGet.Frameworks.dll
+    |           |   NuGet.LibraryModel.dll
+    |           |   NuGet.Packaging.dll
+    |           |   NuGet.ProjectModel.dll
+    |           |   NuGet.Protocol.dll
+    |           |   NuGet.Versioning.dll
+    |           |   Polly.dll
+    |           |   StratFlux.deps.json
+    |           |   StratFlux.dll
+    |           |   StratFlux.exe
+    |           |   StratFlux.pdb
+    |           |   StratFlux.runtimeconfig.json
+    |           |   StratFlux.staticwebassets.runtime.json
+    |           |   System.Composition.AttributedModel.dll
+    |           |   System.Composition.Convention.dll
+    |           |   System.Composition.Hosting.dll
+    |           |   System.Composition.Runtime.dll
+    |           |   System.Composition.TypedParts.dll
+    |           |   System.Configuration.ConfigurationManager.dll
+    |           |   System.Diagnostics.DiagnosticSource.dll
+    |           |   System.Drawing.Common.dll
+    |           |   System.IdentityModel.Tokens.Jwt.dll
+    |           |   System.IO.Pipelines.dll
+    |           |   System.Reflection.MetadataLoadContext.dll
+    |           |   System.Runtime.Caching.dll
+    |           |   System.Security.Cryptography.ProtectedData.dll
+    |           |   System.Security.Permissions.dll
+    |           |   System.Windows.Extensions.dll
+    |           |   
+    |           +---af
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---ar
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---az
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---bg
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---bn-BD
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---cs
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---da
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---de
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---el
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---es
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---fa
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---fi-FI
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---fr
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---fr-BE
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---he
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---hr
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---hu
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---hy
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---id
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---is
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---it
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ja
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ko
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ko-KR
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---ku
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---lv
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---ms-MY
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---mt
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---nb
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---nb-NO
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---nl
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---pl
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---pt
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---pt-BR
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ro
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---ru
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---runtimes
+    |           |   +---unix
+    |           |   |   \---lib
+    |           |   |       +---net6.0
+    |           |   |       |       System.Drawing.Common.dll
+    |           |   |       |       
+    |           |   |       \---netcoreapp3.1
+    |           |   |               Microsoft.Data.SqlClient.dll
+    |           |   |               
+    |           |   +---win
+    |           |   |   \---lib
+    |           |   |       +---net6.0
+    |           |   |       |       Microsoft.Win32.SystemEvents.dll
+    |           |   |       |       System.Drawing.Common.dll
+    |           |   |       |       System.Security.Cryptography.ProtectedData.dll
+    |           |   |       |       System.Windows.Extensions.dll
+    |           |   |       |       
+    |           |   |       +---netcoreapp3.1
+    |           |   |       |       Microsoft.Data.SqlClient.dll
+    |           |   |       |       
+    |           |   |       \---netstandard2.0
+    |           |   |               System.Runtime.Caching.dll
+    |           |   |               
+    |           |   +---win-arm
+    |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
+    |           |   +---win-arm64
+    |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
+    |           |   +---win-x64
+    |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
+    |           |   \---win-x86
+    |           |       \---native
+    |           |               Microsoft.Data.SqlClient.SNI.dll
+    |           |               
+    |           +---sk
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---sl
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---sr
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---sr-Latn
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---sv
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---th-TH
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---tr
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---uk
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---uz-Cyrl-UZ
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---uz-Latn-UZ
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---vi
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---zh-CN
+    |           |       Humanizer.resources.dll
+    |           |       
+    |           +---zh-Hans
+    |           |       Humanizer.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.Features.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Scripting.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           \---zh-Hant
+    |                   Humanizer.resources.dll
+    |                   Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+    |                   Microsoft.CodeAnalysis.CSharp.resources.dll
+    |                   Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |                   Microsoft.CodeAnalysis.Features.resources.dll
+    |                   Microsoft.CodeAnalysis.resources.dll
+    |                   Microsoft.CodeAnalysis.Scripting.resources.dll
+    |                   Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |                   
+    +---Controllers
+    |       BacktestingSettingsController.cs
+    |       BacktestsController.cs
+    |       HomeController.cs
+    |       LoginController.cs
+    |       RegisterController.cs
+    |       StrategiesController.cs
+    |       
+    +---Data
+    |   |   ApplicationDbContext.cs
+    |   |   
+    |   \---Migrations
+    |           20231023231527_New Table Names.cs
+    |           20231023231527_New Table Names.Designer.cs
+    |           20231024035416_Adjusted StratUser Field Attributes.cs
+    |           20231024035416_Adjusted StratUser Field Attributes.Designer.cs
+    |           20231025034629_BacktestingSettings Model Created.cs
+    |           20231025034629_BacktestingSettings Model Created.Designer.cs
+    |           20231025040055_Initial Capital Typo Fix.cs
+    |           20231025040055_Initial Capital Typo Fix.Designer.cs
+    |           20231026015944_Created Rest Of Needed Models.cs
+    |           20231026015944_Created Rest Of Needed Models.Designer.cs
+    |           20231026021441_Fixed Missing User To Strategy Entity Relationship.cs
+    |           20231026021441_Fixed Missing User To Strategy Entity Relationship.Designer.cs
+    |           20231026032921_Changed BacktestingSettings Id Name.cs
+    |           20231026032921_Changed BacktestingSettings Id Name.Designer.cs
+    |           20231028133349_Reworked Results Storage.cs
+    |           20231028133349_Reworked Results Storage.Designer.cs
+    |           20231029005057_Intermediate Chart Indicator Table Plus Other Minor Changes.cs
+    |           20231029005057_Intermediate Chart Indicator Table Plus Other Minor Changes.Designer.cs
+    |           20231030111956_Added Enum Types.cs
+    |           20231030111956_Added Enum Types.Designer.cs
+    |           20231030113522_Removed Old Enum Fields.cs
+    |           20231030113522_Removed Old Enum Fields.Designer.cs
+    |           20231030113639_Added New Enum Fields.cs
+    |           20231030113639_Added New Enum Fields.Designer.cs
+    |           20231030120436_Adjusted Order Size System.cs
+    |           20231030120436_Adjusted Order Size System.Designer.cs
+    |           20231030122520_General Results Old TimeResolution Type Removed.cs
+    |           20231030122520_General Results Old TimeResolution Type Removed.Designer.cs
+    |           20231030122609_General Results TimeResolution Set To Enum Type.cs
+    |           20231030122609_General Results TimeResolution Set To Enum Type.Designer.cs
+    |           20231030125045_Renamed StockTraded Field In GeneralResults.cs
+    |           20231030125045_Renamed StockTraded Field In GeneralResults.Designer.cs
+    |           20231030204615_Removed Incorrect Entity Relationship In TblIndicators.cs
+    |           20231030204615_Removed Incorrect Entity Relationship In TblIndicators.Designer.cs
+    |           20240109012014_GeneralResultsFieldsNowNullable.cs
+    |           20240109012014_GeneralResultsFieldsNowNullable.Designer.cs
+    |           20240110093934_RemovedNetProfitLoss.cs
+    |           20240110093934_RemovedNetProfitLoss.Designer.cs
+    |           ApplicationDbContextModelSnapshot.cs
+    |           
+    +---ModelEnums
+    |       CommissionFeeType.cs
+    |       TimeResolution.cs
+    |       
+    +---Models
+    |       BacktestingSettings.cs
+    |       Chart.cs
+    |       ChartIndicatorMapping.cs
+    |       ErrorViewModel.cs
+    |       FriendList.cs
+    |       GeneralResults.cs
+    |       Indicator.cs
+    |       MessageHistory.cs
+    |       Strategy.cs
+    |       StratUser.cs
+    |       TimeSeriesData.cs
+    |       
+    +---obj
+    |   |   project.assets.json
+    |   |   project.nuget.cache
+    |   |   staticwebassets.pack.sentinel
+    |   |   StratFlux.csproj.nuget.dgspec.json
+    |   |   StratFlux.csproj.nuget.g.props
+    |   |   StratFlux.csproj.nuget.g.targets
+    |   |   
+    |   \---Debug
+    |       \---net6.0
+    |           |   .NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+    |           |   apphost.exe
+    |           |   project.razor.vs.json
+    |           |   staticwebassets.build.json
+    |           |   staticwebassets.development.json
+    |           |   StratFlux.AssemblyInfo.cs
+    |           |   StratFlux.AssemblyInfoInputs.cache
+    |           |   StratFlux.assets.cache
+    |           |   StratFlux.csproj.AssemblyReference.cache
+    |           |   StratFlux.csproj.BuildWithSkipAnalyzers
+    |           |   StratFlux.csproj.CopyComplete
+    |           |   StratFlux.csproj.CoreCompileInputs.cache
+    |           |   StratFlux.csproj.FileListAbsolute.txt
+    |           |   StratFlux.dll
+    |           |   StratFlux.GeneratedMSBuildEditorConfig.editorconfig
+    |           |   StratFlux.genruntimeconfig.cache
+    |           |   StratFlux.GlobalUsings.g.cs
+    |           |   StratFlux.MvcApplicationPartsAssemblyInfo.cache
+    |           |   StratFlux.MvcApplicationPartsAssemblyInfo.cs
+    |           |   StratFlux.pdb
+    |           |   StratFlux.RazorAssemblyInfo.cache
+    |           |   StratFlux.RazorAssemblyInfo.cs
+    |           |   _IsIncrementalBuild
+    |           |   
+    |           +---ref
+    |           |       StratFlux.dll
+    |           |       
+    |           +---refint
+    |           |       StratFlux.dll
+    |           |       
+    |           +---scopedcss
+    |           |   +---bundle
+    |           |   |       StratFlux.styles.css
+    |           |   |       
+    |           |   +---projectbundle
+    |           |   |       StratFlux.bundle.scp.css
+    |           |   |       
+    |           |   \---Views
+    |           |       \---Shared
+    |           |               _Layout.cshtml.rz.scp.css
+    |           |               
+    |           \---staticwebassets
+    +---Properties
+    |       launchSettings.json
+    |       serviceDependencies.json
+    |       serviceDependencies.local.json
+    |       serviceDependencies.local.json.user
+    |       
+    +---Services
+    |       AlpacaDataService.cs
+    |       BacktestsNotificationService.cs
+    |       
+    +---ViewModels
+    |   +---BacktestingSettings
+    |   |       BacktestingSettingsViewModel.cs
+    |   |       
+    |   +---Backtests
+    |   |       GeneralResultsViewModel.cs
+    |   |       NewBacktestViewModel.cs
+    |   |       
+    |   +---Login
+    |   |       LoginViewModel.cs
+    |   |       
+    |   +---Register
+    |   |       RegisterViewModel.cs
+    |   |       
+    |   \---Strategies
+    |           StrategyViewModel.cs
+    |           
+    +---Views
+    |   |   _ViewImports.cshtml
+    |   |   _ViewStart.cshtml
+    |   |   
+    |   +---BacktestingSettings
+    |   |       Edit.cshtml
+    |   |       Index.cshtml
+    |   |       
+    |   +---Backtests
+    |   |       Index.cshtml
+    |   |       Loading.cshtml
+    |   |       NewBacktest.cshtml
+    |   |       ViewResult.cshtml
+    |   |       
+    |   +---Home
+    |   |       Index.cshtml
+    |   |       Privacy.cshtml
+    |   |       
+    |   +---Login
+    |   |       Index.cshtml
+    |   |       
+    |   +---Register
+    |   |       Index.cshtml
+    |   |       
+    |   +---Shared
+    |   |       Error.cshtml
+    |   |       _Layout.cshtml
+    |   |       _Layout.cshtml.css
+    |   |       _LoginPartial.cshtml
+    |   |       _ValidationScriptsPartial.cshtml
+    |   |       
+    |   \---Strategies
+    |           Edit.cshtml
+    |           Index.cshtml
+    |           
+    \---wwwroot
+        |   favicon.ico
+        |   
+        +---css
+        |   |   site.css
+        |   |   
+        |   +---BacktestingSettings
+        |   |       BacktestingSettings.css
+        |   |       BacktestingSettingsEditing.css
+        |   |       
+        |   +---Backtests
+        |   |       Backtesting.css
+        |   |       Loading.css
+        |   |       NewBacktest.css
+        |   |       ViewResult.css
+        |   |       
+        |   +---LayoutCssFiles
+        |   |       Layout.css
+        |   |       LoginPartial.css
+        |   |       
+        |   +---Login
+        |   |       Login.css
+        |   |       
+        |   +---Register
+        |   |       Register.css
+        |   |       
+        |   \---Strategies
+        |           DrawflowThemeImport.css
+        |           Strategies.css
+        |           StrategiesEditing.css
+        |           
+        +---icons
+        |       AddIcon.svg
+        |       BacktestingSettingsIcon.svg
+        |       BacktestsIcon.svg
+        |       DefaultUserIcon.svg
+        |       DeleteIcon.svg
+        |       FriendsAndMessagesIcon.svg
+        |       HomeIcon.svg
+        |       LongLogo.svg
+        |       LongLogoWithDomain.svg
+        |       NavExpandedIcon.svg
+        |       NavRetractedIcon.svg
+        |       NotificationIcon.svg
+        |       PrivacyIcon.svg
+        |       ProfileIcon.svg
+        |       RemoveIcon.svg
+        |       SaveIcon.svg
+        |       ShortLogo.svg
+        |       StrategiesIcon.svg
+        |       UserSettingsIcon.svg
+        |       
+        +---js
+        |   |   site.js
+        |   |   
+        |   +---BacktestJsFiles
+        |   |       Loading.js
+        |   |       NewBacktest.js
+        |   |       
+        |   +---LayoutJsFiles
+        |   |       Layout.js
+        |   |       
+        |   \---StrategyEditorFiles
+        |           StrategyEditor.js
+        |           
+        \---lib
+            +---bootstrap
+            |   |   LICENSE
+            |   |   
+            |   \---dist
+            |       +---css
+            |       |       bootstrap-grid.css
+            |       |       bootstrap-grid.css.map
+            |       |       bootstrap-grid.min.css
+            |       |       bootstrap-grid.min.css.map
+            |       |       bootstrap-grid.rtl.css
+            |       |       bootstrap-grid.rtl.css.map
+            |       |       bootstrap-grid.rtl.min.css
+            |       |       bootstrap-grid.rtl.min.css.map
+            |       |       bootstrap-reboot.css
+            |       |       bootstrap-reboot.css.map
+            |       |       bootstrap-reboot.min.css
+            |       |       bootstrap-reboot.min.css.map
+            |       |       bootstrap-reboot.rtl.css
+            |       |       bootstrap-reboot.rtl.css.map
+            |       |       bootstrap-reboot.rtl.min.css
+            |       |       bootstrap-reboot.rtl.min.css.map
+            |       |       bootstrap-utilities.css
+            |       |       bootstrap-utilities.css.map
+            |       |       bootstrap-utilities.min.css
+            |       |       bootstrap-utilities.min.css.map
+            |       |       bootstrap-utilities.rtl.css
+            |       |       bootstrap-utilities.rtl.css.map
+            |       |       bootstrap-utilities.rtl.min.css
+            |       |       bootstrap-utilities.rtl.min.css.map
+            |       |       bootstrap.css
+            |       |       bootstrap.css.map
+            |       |       bootstrap.min.css
+            |       |       bootstrap.min.css.map
+            |       |       bootstrap.rtl.css
+            |       |       bootstrap.rtl.css.map
+            |       |       bootstrap.rtl.min.css
+            |       |       bootstrap.rtl.min.css.map
+            |       |       
+            |       \---js
+            |               bootstrap.bundle.js
+            |               bootstrap.bundle.js.map
+            |               bootstrap.bundle.min.js
+            |               bootstrap.bundle.min.js.map
+            |               bootstrap.esm.js
+            |               bootstrap.esm.js.map
+            |               bootstrap.esm.min.js
+            |               bootstrap.esm.min.js.map
+            |               bootstrap.js
+            |               bootstrap.js.map
+            |               bootstrap.min.js
+            |               bootstrap.min.js.map
+            |               
+            +---drawflow
+            |   |   LICENSE
+            |   |   package.json
+            |   |   README.md
+            |   |   
+            |   \---dist
+            |           drawflow.min.css
+            |           drawflow.min.js
+            |           drawflow.style.js
+            |           
+            +---jquery
+            |   |   LICENSE.txt
+            |   |   
+            |   \---dist
+            |           jquery.js
+            |           jquery.min.js
+            |           jquery.min.map
+            |           
+            +---jquery-validation
+            |   |   LICENSE.md
+            |   |   
+            |   \---dist
+            |           additional-methods.js
+            |           additional-methods.min.js
+            |           jquery.validate.js
+            |           jquery.validate.min.js
+            |           
+            +---jquery-validation-unobtrusive
+            |       jquery.validate.unobtrusive.js
+            |       jquery.validate.unobtrusive.min.js
+            |       LICENSE.txt
+            |       
+            \---signalr
+                \---dist
+                    \---browser
+                            signalr.js
+                            signalr.js.map
+                            signalr.min.js
+                            signalr.min.js.map
+                            

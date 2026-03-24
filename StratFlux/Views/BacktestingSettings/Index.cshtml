@@ -1,0 +1,35 @@
+﻿@using StratFlux.ViewModels.BacktestingSettings
+@{
+    ViewData["Title"] = "Backtesting Settings";
+}
+
+<div class="settings-list-container">
+    
+
+    <ul class="settings-list">
+        @if (ViewBag.OrderedIds != null && ViewBag.IdToDisplayNameMappings != null)
+        {
+            @foreach (string settingsId in ViewBag.OrderedIds)
+            {
+                <li class="settings-list-item">
+                    <span class="settings-name-label">
+                        @ViewBag.IdToDisplayNameMappings[settingsId]
+                    </span>
+                    <a asp-controller="BacktestingSettings" asp-action="EditSettings" asp-route-Id="@settingsId" class="settings-edit-button">
+                        Edit
+                    </a>
+                    <form asp-controller="BacktestingSettings" asp-action="DeleteSettings" asp-route-Id="@settingsId" method="post" class="settings-delete-form">
+                        <button type="submit" class="settings-delete-button">
+                            Delete
+                        </button>
+                    </form>
+                </li>
+            }
+        }
+    </ul>
+    <a class="create-settings-button" asp-controller="BacktestingSettings" asp-action="EditSettings">
+        Create New Backtesting Settings
+    </a>
+</div>
+
+<link rel="stylesheet" href="~/css/BacktestingSettings/BacktestingSettings.css" />

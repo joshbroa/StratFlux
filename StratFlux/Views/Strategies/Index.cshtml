@@ -1,0 +1,35 @@
+﻿@using StratFlux.ViewModels.Strategies
+@{
+    ViewData["Title"] = "Strategies";
+}
+
+<div class="strategy-list-container">
+
+
+    <ul class="strategy-list">
+        @if (ViewBag.OrderedIds != null && ViewBag.IdToDisplayNameMappings != null)
+        {
+            @foreach (string strategyId in ViewBag.OrderedIds)
+            {
+                <li class="strategy-list-item">
+                    <span class="strategy-name-label">
+                        @ViewBag.IdToDisplayNameMappings[strategyId]
+                    </span>
+                    <a asp-controller="Strategies" asp-action="EditStrategy" asp-route-Id="@strategyId" class="strategy-edit-button">
+                        Edit
+                    </a>
+                    <form asp-controller="Strategies" asp-action="DeleteStrategy" asp-route-Id="@strategyId" method="post" class="strategy-delete-form">
+                        <button type="submit" class="strategy-delete-button">
+                            Delete
+                        </button>
+                    </form>
+                </li>
+            }
+        }
+    </ul>
+    <a class="create-strategy-button" asp-controller="Strategies" asp-action="EditStrategy">
+        Create New Strategy
+    </a>
+</div>
+
+<link rel="stylesheet" href="~/css/Strategies/Strategies.css" />

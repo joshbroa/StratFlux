@@ -1,0 +1,49 @@
+﻿@model StratFlux.ViewModels.Register.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="form-container">
+    <form class="register-form" method="post" asp-controller="Register" asp-action="SubmitDetails">
+        <div class="register-form-field">
+            <label asp-for="Input.UserName" class="register-label-text"></label>
+            <input asp-for="Input.UserName" class="register-form-input-field" autocomplete="username" />
+            <span asp-validation-for="Input.UserName" class="validation-text"></span>
+        </div>
+
+        <div class="register-form-field">
+            <label asp-for="Input.FirstName" class="register-label-text"></label>
+            <input asp-for="Input.FirstName" class="register-form-input-field" autocomplete="first-name" />
+            <span asp-validation-for="Input.FirstName" class="validation-text"></span>
+        </div>
+
+        <div class="register-form-field">
+            <label asp-for="Input.LastName" class="register-label-text"></label>
+            <input asp-for="Input.LastName" class="register-form-input-field" autocomplete="last-name" />
+            <span asp-validation-for="Input.LastName" class="validation-text"></span>
+        </div>
+
+        <div class="register-form-field">
+            <label asp-for="Input.Email" class="register-label-text"></label>
+            <input asp-for="Input.Email" class="register-form-input-field" autocomplete="email" />
+            <span asp-validation-for="Input.Email" class="validation-text"></span>
+        </div>
+
+        <div class="register-form-field">
+            <label asp-for="Input.Password" class="register-label-text"></label>
+            <input asp-for="Input.Password" class="register-form-input-field" autocomplete="new-password" />
+            <span asp-validation-for="Input.Password" class="validation-text"></span>
+        </div>
+        
+        <div class="register-form-field">
+            <label asp-for="Input.ConfirmPassword" class="register-label-text"></label>
+            <input asp-for="Input.ConfirmPassword" class="register-form-input-field" autocomplete="new-password" />
+            <span asp-validation-for="Input.ConfirmPassword" class="validation-text"></span>
+        </div>
+        
+        <button type="submit" class="register-submit-button">Register</button>
+    </form>
+</div>
+
+<link rel="stylesheet" href="~/css/Register/Register.css" />

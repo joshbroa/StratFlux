@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Loading Backtest";
+}
+
+<div class="main-container">
+    <div id="loading-spinner"></div>
+    <span id="spinner-label">Running Backtest...</span>
+    <div id="completed-container" class="no-display">
+        <span class="completed-title">Backtesting Complete!</span>
+        <div class="button-container">
+            <a asp-action="Index" asp-controller="Home" class="option-button">Return to Home</a>
+            <a asp-action="Index" asp-controller="Backtests" class="option-button">Return to Results List</a>
+            <a asp-action="ViewResult" asp-controller="Backtests" id="view-results-button" class="option-button">View Results</a>
+        </div>
+    </div>
+    <div id="failed-container" class="no-display">
+        <span class="error-warning">Uh oh, something went wrong.</span>
+        <span id="error-message"></span>
+        <a asp-action="Index" asp-controller="Backtests" class="option-button">Go Back</a>
+    </div>
+</div>
+
+<script src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/BacktestJsFiles/Loading.js"></script>
+<link rel="stylesheet" href="~/css/Backtests/Loading.css" />

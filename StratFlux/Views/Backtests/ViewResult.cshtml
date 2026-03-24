@@ -1,0 +1,139 @@
+﻿@using StratFlux.ViewModels.Backtests
+@model GeneralResultsViewModel
+
+@{
+    ViewData["Title"] = "Viewing Results";
+
+    // This dictionary exists so that the string values of currencies can be easily retrieved
+    // If the value exists, then it is converted into a formatted string of type "N2" which has comma seperators every thousand and rounds to 2 decimal places
+    Dictionary<string, string> stringValues = new Dictionary<string, string>()
+    {
+        { "InitialEquity", Model.InitialEquity != null? Model.InitialEquity.Value.ToString("N2") : "N/A" },
+        { "FinalEquity", Model.FinalEquity != null? Model.FinalEquity.Value.ToString("N2") : "N/A" },
+        { "UnrealisedReturnLoss", Model.UnrealisedReturnLoss != null? Model.UnrealisedReturnLoss.Value.ToString("N2") : "N/A" },
+        { "NetReturnLoss", Model.NetReturnLoss != null? Model.NetReturnLoss.Value.ToString("N2") : "N/A" },
+        { "TotalCommissionAmount", Model.TotalCommissionAmount != null? Model.TotalCommissionAmount.Value.ToString("N2") : "N/A" },
+        { "AverageReturnLoss", Model.AverageReturnLoss != null? Model.AverageReturnLoss.Value.ToString("N2") : "N/A" },
+        { "MaxDrawDown", Model.MaxDrawDown != null? Model.MaxDrawDown.Value.ToString("N2") : "N/A" }
+    };
+}
+
+<div class="result-container">
+    <span class="result-name-title">@Model.ResultsName</span>
+    <span class="result-subtitle">A backtest trading @Model.StockTraded</span>
+    <div class="results-list">
+        <div class="result-row">
+            <div class="result-item-container">
+                <label asp-for="InitialEquity" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["InitialEquity"]</span>
+                <span class="result-item-description">This is the value of all the assets before the trading started.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="FinalEquity" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["FinalEquity"]</span>
+                <span class="result-item-description">This is the value of all the assets after the trading ended.</span>
+            </div>
+        </div>
+        <div class="result-row">
+            <div class="result-item-container">
+                <label asp-for="UnrealisedReturnLoss" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["UnrealisedReturnLoss"]</span>
+                <span class="result-item-description">This is the return in terms of the value of all assets at the end of trading.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="NetReturnLoss" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["NetReturnLoss"]</span>
+                <span class="result-item-description">This is the return in capital alone after trading.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="TotalCommissionAmount" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["TotalCommissionAmount"]</span>
+                <span class="result-item-description">This is the cummulative cost of all the commission fees incurred during the trading period.</span>
+            </div>
+        </div>
+        <div class="result-row">
+            <div class="result-item-container">
+                <label asp-for="AverageReturnLoss" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["AverageReturnLoss"]</span>
+                <span class="result-item-description">This is the average profit/loss across all trades that occurred during the backtest.</span>
+            </div>
+            @if (Model.AverageHoldingPeriod != null)
+            {
+                <div class="result-item-container">
+                    <label asp-for="AverageHoldingPeriod" class="result-item-label"></label>
+                    <span class="result-item-value">
+                        @($"{Model.AverageHoldingPeriod.Value.Days} days, {Model.AverageHoldingPeriod.Value.Hours} hours, {Model.AverageHoldingPeriod.Value.Minutes} minutes and {Model.AverageHoldingPeriod.Value.Seconds} seconds.")
+                    </span>
+                    <span class="result-item-description">This is the average amount of time that a trade would be active before being closed.</span>
+                </div>
+            }
+        </div>
+        <div class="result-row">
+            <div class="result-item-container">
+                <label asp-for="WinningTrades" class="result-item-label"></label>
+                <span class="result-item-value">@Model.WinningTrades</span>
+                <span class="result-item-description">This is the amount of trades which made a profit.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="TotalClosedTrades" class="result-item-label"></label>
+                <span class="result-item-value">@Model.TotalClosedTrades</span>
+                <span class="result-item-description">This is the total number of closed trades during the backtest.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="LosingTrades" class="result-item-label"></label>
+                <span class="result-item-value">@Model.LosingTrades</span>
+                <span class="result-item-description">This is the amount of trades which made a loss.</span>
+            </div>
+        </div>
+        <div class="result-row">
+            <div class="result-item-container">
+                <label asp-for="MaxDrawDown" class="result-item-label"></label>
+                <span class="result-item-value">$@stringValues["MaxDrawDown"]</span>
+                <span class="result-item-description">This is the lowest equity reached during the backtest.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="StandardDeviationOverTime" class="result-item-label"></label>
+                <span class="result-item-value">@Model.StandardDeviationOverTime</span>
+                <span class="result-item-description">This is the standard deviation of the value of equity over time during the backtest.</span>
+            </div>
+        </div>
+        <div class="result-row">
+            <div class="result-item-container">
+                <label asp-for="TimeFrameStart" class="result-item-label"></label>
+                <span class="result-item-value">@Model.TimeFrameStart</span>
+                <span class="result-item-description">This is the date and time that trading began.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="TimeFrameEnd" class="result-item-label"></label>
+                <span class="result-item-value">@Model.TimeFrameEnd</span>
+                <span class="result-item-description">This is the date and time that trading ended.</span>
+            </div>
+            <div class="result-item-container">
+                <label asp-for="TimeResolution" class="result-item-label"></label>
+                @if (Model.TimeResolution == StratFlux.ModelEnums.TimeResolution.PerMinute)
+                {
+                <span class="result-item-value">Per Minute</span>
+                }
+                else if (Model.TimeResolution == StratFlux.ModelEnums.TimeResolution.Hourly)
+                {
+                    <span class="result-item-value">Hourly</span>
+                }
+                else if (Model.TimeResolution == StratFlux.ModelEnums.TimeResolution.Daily)
+                {
+                    <span class="result-item-value">Daily</span>
+                }
+                else if (Model.TimeResolution == StratFlux.ModelEnums.TimeResolution.Weekly)
+                {
+                    <span class="result-item-value">Weekly</span>
+                }
+                else
+                {
+                    <span class="result-item-value">Monthly</span>
+                }
+                <span class="result-item-description">This is the time resolution for this backtest.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/Backtests/ViewResult.css" />

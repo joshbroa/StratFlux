@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Backtesting";
+}
+
+<div class="results-list-container">
+    <ul class="results-list">
+        @if (ViewBag.OrderedIds != null && ViewBag.IdToDisplayNameMappings != null)
+        {
+            @foreach (string resultId in ViewBag.OrderedIds)
+            {
+                <li class="results-list-item">
+                    <span class="results-name-label">
+                        @ViewBag.IdToDisplayNameMappings[resultId]
+                    </span>
+                    <a asp-controller="Backtests" asp-action="ViewResult" asp-route-Id="@resultId" class="results-view-button">
+                        View
+                    </a>
+                    <form asp-controller="Backtests" asp-action="DeleteResult" asp-route-Id="@resultId" method="post" class="results-delete-form">
+                        <button type="submit" class="results-delete-button">
+                            Delete
+                        </button>
+                    </form>
+                </li>
+            }
+        }
+    </ul>
+    <a class="create-results-button" asp-controller="Backtests" asp-action="NewBacktest">
+        Run New Backtest
+    </a>
+</div>
+
+<link rel="stylesheet" href="~/css/Backtests/Backtesting.css" />

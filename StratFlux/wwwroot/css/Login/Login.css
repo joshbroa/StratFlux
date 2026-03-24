@@ -1,0 +1,59 @@
+﻿body {
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-inline: 28%;
+    margin-top: 30px;
+}
+
+.login-form {
+}
+
+.login-form-field {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-toggle {
+
+}
+
+.login-form-input-field {
+    width: 100%;
+    height: 2rem;
+    border-radius: 8px;
+    border: solid 1px;
+}
+
+.login-label-text {
+    font-weight: 600;
+}
+
+.validation-text {
+    color: red;
+}
+
+.login-submit-button {
+    width: 9rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    background-color: #ff9090;
+    border: solid 2px;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+.login-submit-button:hover {
+    opacity: 85%;
+}
+
+.validation-summary {
+    color: red;
+}

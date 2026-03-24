@@ -1,0 +1,119 @@
+﻿body {
+}
+
+.results-list-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.create-results-button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    background-color: #3dc62b;
+    width: 20rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 1px;
+}
+
+    .create-results-button:hover {
+        background-color: #28b01b;
+        color: black;
+    }
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    justify-content: center;
+    width: 70%;
+    min-width: 18rem;
+}
+
+.results-list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 5px;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.results-name-label {
+    font-weight: 500;
+    font-size: 1.1rem;
+    overflow-x: scroll;
+    width: 15rem;
+    border-left: groove 1px;
+    border-right: groove 1px;
+    text-align: center;
+}
+
+    .results-name-label::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .results-name-label::-webkit-scrollbar-thumb {
+        background-color: lightgrey;
+        border-radius: 4px;
+    }
+
+        .results-name-label::-webkit-scrollbar-thumb:hover {
+            background-color: grey;
+        }
+
+.results-view-button {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 3rem;
+    height: 2rem;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #e9ef0e;
+}
+
+    .results-view-button:hover {
+        color: black;
+        background-color: #efda3d;
+    }
+
+.results-delete-form {
+    width: 5rem;
+}
+
+.results-delete-button {
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    background-color: #ff5757;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.results-delete-form:hover .results-delete-button {
+    background-color: #ff1c1c;
+    color: black;
+}

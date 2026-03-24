@@ -1,0 +1,45 @@
+﻿@using StratFlux.ViewModels.Strategies
+@model StrategyViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="node-list-and-editor-container">
+    <div class="node-list-container">
+        <ul class="node-types-list">
+            <li class="node-type-item node-type-item-selected" onclick="typeSelected('ValueNodes', this)">Values</li>
+            <li class="node-type-item" onclick="typeSelected('OperationNodes', this)">Operations</li>
+            <li class="node-type-item" onclick="typeSelected('ConditionNodes', this)">Conditions</li>
+            <li class="node-type-item" onclick="typeSelected('ConditionalOperatorNodes', this)">Conditional Operators</li>
+            <li class="node-type-item" onclick="typeSelected('ActionNodes', this)">Actions</li>
+            <li class="node-type-item" onclick="typeSelected('IndicatorNodes', this)">Indicators</li>
+            <li class="node-type-item" onclick="typeSelected('ChartNodes', this)">Charts</li>
+        </ul>
+        <ul class="node-list">
+            <!-- Items will be filled in by JS on load and type selection -->
+        </ul>
+    </div>
+    <div id="drawflow" ondragover="event.preventDefault();" ondrop="nodeDrop(event)"></div>
+</div>
+
+<form class="strategy-save-form" method="post" asp-controller="Strategies" asp-action="SaveStrategy" asp-route-Id="@Model.Id">
+    <div class="strategy-form-field">
+        <label asp-for="Input.StrategyName" class="strategy-field-label-text"></label>
+        <input asp-for="Input.StrategyName" class="strategy-name-input-field" />
+        <span asp-validation-for="Input.StrategyName" class="validation-text"></span>
+    </div>
+    <div class="strategy-form-field">
+        <label asp-for="Input.StrategyDescription" class="strategy-field-label-text"></label>
+        <textarea asp-for="Input.StrategyDescription" rows="3" cols="40" class="strategy-description-input-field"></textarea>
+        <span asp-validation-for="Input.StrategyDescription" class="validation-text"></span>
+    </div>
+    <input id="jsonDataElement" type="hidden" asp-for="Input.StrategyJson" />
+    <button type="submit" class="strategy-submit-button">Save</button>
+</form>
+
+<script src="~/js/StrategyEditorFiles/StrategyEditor.js"></script>
+<script src="~/lib/drawflow/dist/drawflow.min.js"></script>
+<link rel="stylesheet" href="~/lib/drawflow/dist/drawflow.min.css" />
+<link rel="stylesheet" href="~/css/Strategies/DrawflowThemeImport.css" />
+<link rel="stylesheet" href="~/css/Strategies/StrategiesEditing.css" />

@@ -1,0 +1,66 @@
+﻿.register-button {
+    list-style: none;
+    border: solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ff9090;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+.register-button:hover {
+    opacity: 85%;
+}
+
+.login-button {
+    list-style: none;
+    border: solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #6e88ff;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+.login-button:hover {
+    opacity: 85%;
+}
+
+.profile-picture-list-item {
+    list-style: none;
+    align-self: center;
+}
+
+.profile-picture {
+
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 30px;
+    border: solid 1px;
+}
+
+.sign-out-button-list-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sign-out-button-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-out-button {
+    overflow: hidden;
+    border-radius: 3px;
+    border: 2px solid;
+    background-color: lightgrey;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-out-button:hover {
+    background-color: lightcoral;
+}

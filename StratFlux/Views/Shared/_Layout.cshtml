@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StratFlux</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/StratFlux.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LayoutCssFiles/Layout.css" />
+</head>
+<body>
+    <header>
+        <nav class="horizontal-nav">
+            <div class="long-logo">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img style="height: 2rem;" src="~/icons/LongLogoWithDomain.svg">
+                </a>
+            </div>
+            <div class="login-partial-container">
+                <ul class="login-partial-list">
+                    @await Html.PartialAsync("_LoginPartial")
+                </ul>
+            </div>
+        </nav>
+        
+        <nav class="vertical-nav">
+            <div class="button-and-logo-container">
+                <img class="nav-button" src="~/icons/NavRetractedIcon.svg" onclick="toggleNav(this)" />
+
+                <!-- This element only exists to load the NavExpandedIcon.svg file to the browser, it is not displayed -->
+                <img class="hide-this" src="~/icons/NavExpandedIcon.svg" />
+                
+                <img class="short-logo" src="~/icons/ShortLogo.svg" />
+            </div>
+            <ul class="vertical-nav-list">
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Home" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/HomeIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">Home</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Strategies" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/StrategiesIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">Strategies</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="BacktestingSettings" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/BacktestingSettingsIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">Backtesting Settings</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Backtests" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/BacktestsIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">Backtests</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Home" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/UserSettingsIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">User Settings</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Home" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/ProfileIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">User Profile</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Home" asp-action="Index">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/FriendsAndMessagesIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">Friends and Messages</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-item-asp" asp-area="" asp-controller="Home" asp-action="Privacy">
+                        <div class="nav-icon-container">
+                            <img class="nav-icon" src="~/icons/PrivacyIcon.svg" />
+                        </div>
+                        <div class="nav-span-container">
+                            <span class="nav-span">Privacy</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-body-container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/LayoutJsFiles/Layout.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

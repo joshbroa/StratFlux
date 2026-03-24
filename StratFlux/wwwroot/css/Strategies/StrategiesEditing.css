@@ -1,0 +1,590 @@
+﻿.node-list-and-editor-container {
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.node-list-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 5rem;
+}
+
+.node-types-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.node-type-item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    cursor: pointer;
+}
+
+.node-type-item:hover {
+    background-color: #ddd;
+}
+
+.node-type-item-selected {
+    font-weight: 700;
+}
+
+.node-list {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    border-right: solid 1px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.node-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.node-list::-webkit-scrollbar-thumb {
+    background-color: lightgrey;
+    border-radius: 4px;
+}
+
+.node-list::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
+.node-item {
+    margin-left: 4rem;
+    border: solid 1px;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.2rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.strategy-save-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.strategy-form-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+}
+
+.strategy-field-label-text {
+    font-weight: 600;
+}
+
+.strategy-name-input-field {
+    
+}
+
+.validation-text {
+    color: red;
+}
+
+.strategy-description-input-field {
+    resize: none;
+    height: 5rem;
+}
+
+.strategy-submit-button {
+    width: 9rem;
+    height: 4.5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: #00ff21;
+    border: solid 2px;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+.strategy-submit-button:hover {
+    opacity: 85%;
+}
+
+
+
+#drawflow {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    cursor: grab;
+}
+
+#drawflow:active {
+    cursor: grabbing;
+}
+
+
+#drawflow .value-type {
+    background-color: #51cadb;
+}
+
+#drawflow .operation-type {
+    background-color: #ffa8a8;
+}
+
+#drawflow .condition-type {
+    background-color: #f7b136;
+}
+
+#drawflow .conditional-operator-type {
+    background-color: #d287ff;
+}
+
+#drawflow .action-type {
+    background-color: #29f5e8;
+}
+
+#drawflow .indicator-type {
+    background-color: #ff21d9;
+}
+
+#drawflow .chart-type {
+    background-color: #fe215e;
+}
+
+
+#drawflow .input-label-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100px;
+    justify-content: center;
+}
+
+#drawflow .input-label {
+    height: 25px;
+}
+
+#drawflow .center-label-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#drawflow .center-label-title {
+    position: absolute;
+    font-weight: 500;
+    border-bottom: solid 2px;
+}
+
+#drawflow .center-label-function-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+}
+
+#drawflow .center-label-function {
+    padding: 0.2rem;
+    background-color: #DDD;
+    border: solid 1px;
+    align-items: center;
+}
+
+#drawflow .output-label-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+#drawflow .output-label {
+    height: 25px;
+}
+
+#drawflow .node-input-box {
+    width: 5rem;
+}
+
+#drawflow .node-input-box[type=number] {
+    -moz-appearance: textfield;
+}
+
+#drawflow .node-input-box::-webkit-outer-spin-button, #drawflow .node-input-box::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#drawflow .node-input-box::-ms-clear, #drawflow .node-input-box::-ms-reveal {
+    display: none;
+}
+
+#drawflow .node-input-box-integer {
+    width: 3rem;
+}
+
+
+#drawflow .const-value-node {
+    width: 12rem;
+}
+
+#drawflow .open-value-node {
+    width: 14rem;
+    height: 8rem;
+}
+
+    #drawflow .open-value-node .center-label-div {
+        width: 10rem;
+    }
+
+#drawflow .low-value-node {
+    width: 14rem;
+    height: 8rem;
+}
+
+    #drawflow .low-value-node .center-label-div {
+        width: 10rem;
+    }
+
+#drawflow .high-value-node {
+    width: 14rem;
+    height: 8rem;
+}
+
+    #drawflow .high-value-node .center-label-div {
+        width: 10rem;
+    }
+
+#drawflow .close-value-node {
+    width: 14rem;
+    height: 8rem;
+}
+
+    #drawflow .close-value-node .center-label-div {
+        width: 10rem;
+    }
+
+#drawflow .volume-value-node {
+    width: 15rem;
+    height: 8rem;
+}
+
+    #drawflow .volume-value-node .center-label-div {
+        width: 11rem;
+    }
+
+#drawflow .sma-node {
+    width: 15rem;
+    height: 10rem;
+}
+
+    #drawflow .sma-node .center-label-div {
+        width: 11rem;
+    }
+
+#drawflow .ema-node {
+    width: 15.5rem;
+    height: 10rem;
+}
+
+    #drawflow .ema-node .center-label-div {
+        width: 12rem;
+    }
+
+#drawflow .bolu-node {
+    width: 16rem;
+    height: 12rem;
+}
+
+    #drawflow .bolu-node .center-label-div {
+        width: 12rem;
+    }
+
+#drawflow .bold-node {
+    width: 16rem;
+    height: 12rem;
+}
+
+    #drawflow .bold-node .center-label-div {
+        width: 12rem;
+    }
+
+#drawflow .rsi-node {
+    width: 15rem;
+    height: 10rem;
+}
+
+    #drawflow .rsi-node .center-label-div {
+        width: 11rem;
+    }
+
+#drawflow .mfi-node {
+    width: 15rem;
+    height: 10rem;
+}
+
+    #drawflow .mfi-node .center-label-div {
+        width: 11rem;
+    }
+
+
+#drawflow .add-node {
+    
+}
+
+#drawflow .subtract-node {
+
+}
+
+#drawflow .multiply-node {
+
+}
+
+#drawflow .divide-node {
+
+}
+
+
+#drawflow .equal-to-node {
+    width: 13rem;
+}
+
+#drawflow .less-than-node {
+    width: 13rem;
+}
+
+#drawflow .less-than-or-equal-to-node {
+    width: 14rem;
+}
+
+#drawflow .greater-than-node {
+    width: 13rem;
+}
+
+#drawflow .greater-than-or-equal-to-node {
+    width: 14rem;
+}
+
+#drawflow .crossover-node {
+    width: 18rem;
+}
+
+#drawflow .crossunder-node {
+    width: 18rem;
+}
+
+
+#drawflow .and-node {
+    width: 14.5rem;
+}
+
+#drawflow .or-node {
+    width: 13.5rem;
+}
+
+#drawflow .xor-node {
+    width: 13.5rem;
+}
+
+
+#drawflow .tpslp-node {
+    width: 20rem;
+    height: 10rem;
+}
+
+    #drawflow .tpslp-node .center-label-div {
+        width: 15rem;
+    }
+
+    #drawflow .tpslp-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .tpsla-node {
+    width: 20rem;
+    height: 10rem;
+}
+
+    #drawflow .tpsla-node .center-label-div {
+        width: 15rem;
+    }
+
+    #drawflow .tpsla-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .increase-position-node {
+    width: 16rem;
+    height: 10rem;
+}
+    
+    #drawflow .increase-position-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .increase-position-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .decrease-position-node {
+    width: 16rem;
+    height: 10rem;
+}
+    
+    #drawflow .decrease-position-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .decrease-position-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .set-position-node {
+    width: 16rem;
+    height: 10rem;
+}
+
+    #drawflow .set-position-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .set-position-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .reset-position-node {
+    width: 14rem;
+    height: 10rem;
+}
+
+    #drawflow .reset-position-node .center-label-div {
+        width: 10rem;
+    }
+
+    #drawflow .reset-position-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .close-trades-node {
+    width: 14rem;
+    height: 8rem;
+}
+
+    #drawflow .close-trades-node .center-label-div {
+        width: 10rem;
+    }
+
+    #drawflow .close-trades-node .input-label-list {
+        height: 100%;
+    }
+
+
+#drawflow .indicator-with-stock-data-node {
+    width: 18rem;
+    height: 18rem;
+}
+
+    #drawflow .indicator-with-stock-data-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .indicator-with-stock-data-node .center-label-function {
+        margin-bottom: 1rem;
+    }
+
+    #drawflow .indicator-with-stock-data-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .indicator-without-stock-data-node {
+    width: 18rem;
+    height: 18rem;
+}
+
+    #drawflow .indicator-without-stock-data-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .indicator-without-stock-data-node .center-label-function {
+        margin-bottom: 1rem;
+    }
+
+    #drawflow .indicator-without-stock-data-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .enclosed-area-indicator-with-stock-data-node {
+    width: 20rem;
+    height: 37rem;
+}
+
+    #drawflow .enclosed-area-indicator-with-stock-data-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .enclosed-area-indicator-with-stock-data-node .center-label-function {
+        margin-bottom: 1rem;
+    }
+
+    #drawflow .enclosed-area-indicator-with-stock-data-node .input-label-list {
+        height: 100%;
+    }
+
+#drawflow .enclosed-area-indicator-without-stock-data-node {
+    width: 22rem;
+    height: 37rem;
+}
+
+    #drawflow .enclosed-area-indicator-without-stock-data-node .center-label-div {
+        width: 12rem;
+    }
+
+    #drawflow .enclosed-area-indicator-without-stock-data-node .center-label-function {
+        margin-bottom: 1rem;
+    }
+
+    #drawflow .enclosed-area-indicator-without-stock-data-node .input-label-list {
+        height: 100%;
+    }
+
+
+#drawflow .chart-node {
+    width: 15rem;
+    height: 10rem;
+}
+
+    #drawflow .chart-node .center-label-div {
+        width: 11rem;
+    }
+
+    #drawflow .chart-node .input-label-list {
+        height: 100%;
+    }

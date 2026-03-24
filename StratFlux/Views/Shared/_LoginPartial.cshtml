@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<StratUser> SignInManager
+@inject UserManager<StratUser> UserManager
+
+@{
+    var UserIsSignedIn = SignInManager.IsSignedIn(User);
+}
+
+<link rel="stylesheet" href="~/css/LayoutCssFiles/LoginPartial.css" />
+
+@if (UserIsSignedIn)
+{
+    var UserProfilePicture = UserManager.GetUserAsync(User).Result.ProfilePicture;
+
+    <li class="profile-picture-list-item">
+        @if (UserProfilePicture != null)
+        {
+            <img class="profile-picture" src="data:image/*;base64,@(Convert.ToBase64String(UserProfilePicture))">
+        }
+        else
+        {
+            <img class="profile-picture" src="~/icons/DefaultUserIcon.svg">
+        }
+    </li>
+    <li class="sign-out-button-list-item">
+        <form asp-controller="Login" asp-action="SignOutUser" method="post" class="sign-out-button-container">
+            <button type="submit" class="sign-out-button text-dark">
+                Sign Out
+            </button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="register-button">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Register" asp-action="Index">
+            Register
+        </a>
+    </li>
+    <li class="login-button">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">
+            Login
+        </a>
+    </li>
+}
