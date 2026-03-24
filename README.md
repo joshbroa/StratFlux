@@ -1,6 +1,6 @@
 # StratFlux
 
-![](Docs/Images/StrategyEditorGIF.gif)
+![](Stratflux/Docs/Images/StrategyEditorGIF.gif)
 
 StratFlux is an Algorithmic Trading Strategy Builder and Backtesting Engine, created as part of my **A-Level Computer Science Non-Exam Assessment (NEA)**.
 
@@ -14,15 +14,15 @@ The web application empowers users to design custom trading strategies using an 
 
 - **Visual Strategy Editor:** A powerful drag-and-drop node interface (powered by *Drawflow*) mimicking logic gates, indicators (SMA, EMA, RSI, etc.), and mathematical conditionals. Users can seamlessly connect nodes to build complex entry and exit trading conditions.
 
-    ![](Docs/Images/StrategyEditorPNG.png)
+    ![](Stratflux/Docs/Images/StrategyEditorPNG.png)
 
 - **Custom Backtesting Engine:** Evaluates user-created node networks against historical OHLCV data to simulate real-world trading performance, notifying user of results via SignalR.
 
-    ![](Docs/Images/BacktestGIF.gif)
+    ![](Stratflux/Docs/Images/BacktestGIF.gif)
 
 - **Detailed Analytics:** Creates backtest reports including Max Drawdown, Win/Loss Ratio, Net Returns, Commission Fees, and Average Holding Periods.
 
-    ![](Docs/Images/Results.png)
+    ![](Stratflux/Docs/Images/Results.png)
 
 - **Live Market Data Integration:** Connects with the **Alpaca Markets API** for accurate and high-fidelity paper/historical stock data retrieval.
 
@@ -132,7 +132,7 @@ This application was researched, designed, implemented, tested, and evaluated fr
 Here you can find the video I submitted for the testing section. It may be useful if you want to see the functionality of this application without installing it on your own machine:
 
 <a href="https://youtu.be/NECc2XUvnOo">
-  <img src="Docs/Images/YoutubeLogoPNG.png" alt="StratFlux Testing Video" width="200" />
+  <img src="Stratflux/Docs/Images/YoutubeLogoPNG.png" alt="StratFlux Testing Video" width="200" />
 </a>
 
 ## Licence
